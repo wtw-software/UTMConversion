@@ -9,7 +9,15 @@
 import CoreLocation
 import Foundation
 
-private let utmScaleFactor = 0.9996
+let utmScaleFactor = 0.9996
+
+func toDegrees(radians: Double) -> Double {
+    return radians * 180 / M_PI
+}
+
+func toRadians(degrees: Double) -> Double {
+    return degrees / 180 * M_PI
+}
 
 struct TMCoordinate {
     let northing: Double
