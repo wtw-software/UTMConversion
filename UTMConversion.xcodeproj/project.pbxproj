@@ -14,6 +14,10 @@
 		454361D81E7BECE300656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454361D91E7BECE700656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454361DA1E7BECE900656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454361EE1E7C077E00656472 /* RadianDegrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EB1E7C077E00656472 /* RadianDegrees.swift */; };
+		454361EF1E7C077E00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
+		454361F01E7C077E00656472 /* UTMConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361ED1E7C077E00656472 /* UTMConversion.swift */; };
+		454361F21E7C078D00656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		454361CA1E7BE7B000656472 /* UTMConversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UTMConversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454361DB1E7BECFA00656472 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		454361DE1E7BED1500656472 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		454361EB1E7C077E00656472 /* RadianDegrees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadianDegrees.swift; sourceTree = "<group>"; };
+		454361EC1E7C077E00656472 /* TMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMCoordinate.swift; sourceTree = "<group>"; };
+		454361ED1E7C077E00656472 /* UTMConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMConversion.swift; sourceTree = "<group>"; };
+		454361F11E7C078D00656472 /* UTMConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMConversionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,9 @@
 				454361761E7BE75800656472 /* UTMConversion.h */,
 				454361DB1E7BECFA00656472 /* Info-tvOS.plist */,
 				454361771E7BE75800656472 /* Info.plist */,
+				454361EB1E7C077E00656472 /* RadianDegrees.swift */,
+				454361EC1E7C077E00656472 /* TMCoordinate.swift */,
+				454361ED1E7C077E00656472 /* UTMConversion.swift */,
 			);
 			path = UTMConversion;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 			children = (
 				454361DE1E7BED1500656472 /* Info-tvOS.plist */,
 				454361831E7BE75800656472 /* Info.plist */,
+				454361F11E7C078D00656472 /* UTMConversionTests.swift */,
 			);
 			path = UTMConversionTests;
 			sourceTree = "<group>";
@@ -445,6 +457,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454361EF1E7C077E00656472 /* TMCoordinate.swift in Sources */,
+				454361F01E7C077E00656472 /* UTMConversion.swift in Sources */,
+				454361F21E7C078D00656472 /* UTMConversionTests.swift in Sources */,
+				454361EE1E7C077E00656472 /* RadianDegrees.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +670,7 @@
 		4543618B1E7BE75800656472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7L5H8T8QE3;
 				INFOPLIST_FILE = UTMConversionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -666,6 +683,7 @@
 		4543618C1E7BE75800656472 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7L5H8T8QE3;
 				INFOPLIST_FILE = UTMConversionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
