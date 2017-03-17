@@ -161,12 +161,12 @@
 		454361751E7BE75800656472 /* UTMConversion */ = {
 			isa = PBXGroup;
 			children = (
-				454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */,
-				454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */,
+				454361761E7BE75800656472 /* UTMConversion.h */,
 				454361DB1E7BECFA00656472 /* Info-tvOS.plist */,
 				454361771E7BE75800656472 /* Info.plist */,
+				454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */,
+				454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */,
 				454361EC1E7C077E00656472 /* TMCoordinate.swift */,
-				454361761E7BE75800656472 /* UTMConversion.h */,
 				454361F31E7C0A4900656472 /* UTMCoordinate.swift */,
 			);
 			path = UTMConversion;
