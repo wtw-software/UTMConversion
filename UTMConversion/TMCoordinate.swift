@@ -5,20 +5,41 @@
 //  Created by Peter Ringset on 16/03/2017.
 //  Copyright © 2017 WTW. All rights reserved.
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 import CoreLocation
 import Foundation
 
-private let utmScaleFactor = 0.9996
+let utmScaleFactor = 0.9996
+
+func toDegrees(radians: Double) -> Double {
+    return radians * 180 / M_PI
+}
+
+func toRadians(degrees: Double) -> Double {
+    return degrees / 180 * M_PI
+}
 
 struct TMCoordinate {
     let northing: Double
     let easting: Double
-    
-    init(northing: Double, easting: Double) {
-        self.northing = northing
-        self.easting = easting
-    }
     
     init(utmCoordinate: UTMCoordinate) {
         easting = (utmCoordinate.easting - 500000.0) / utmScaleFactor;
@@ -26,9 +47,8 @@ struct TMCoordinate {
             /* If in southern hemisphere, adjust y accordingly. */
             if case .southern = utmCoordinate.hemisphere {
                 return (utmCoordinate.northing - 10000000.0) / utmScaleFactor
-            } else {
-                return utmCoordinate.northing / utmScaleFactor
             }
+            return utmCoordinate.northing / utmScaleFactor
         }()
     }
     
@@ -66,6 +86,7 @@ struct TMCoordinate {
         let l7coef = 61.0 - 479.0 * t2 + 179.0 * (t2 * t2) - (t2 * t2 * t2)
         let l8coef = 1385.0 - 3111.0 * t2 + 543.0 * (t2 * t2) - (t2 * t2 * t2)
         
+        // Compute the ellipsoidal distance from the equator to a point at a given latitude in meters
         let arcLengthOfMeridian: (Double, UTMDatum) -> Double = { latitudeInRadians, datum in
             let equitorialRadus = datum.equitorialRadius
             let polarRadius = datum.polarRadius
@@ -225,33 +246,4 @@ struct TMCoordinate {
         return footprintLatitudeInRadians
     }
     
-    //
-    // Computes the ellipsoidal distance from the equator to a point at a given latitude in meters
-    private func arcLengthOfMeridian(latitudeInRadians: Double, datum: UTMDatum) -> Double {
-        let equitorialRadus = datum.equitorialRadius
-        let polarRadius = datum.polarRadius
-        
-        /* Precalculate n */
-        let n = (equitorialRadus - polarRadius) / (equitorialRadus + polarRadius)
-        
-        /* Precalculate alpha */
-        let alpha = ((equitorialRadus + polarRadius) / 2.0) * (1.0 + (pow(n, 2.0) / 4.0) + (pow(n, 4.0) / 64.0))
-        
-        /* Precalculate beta */
-        let beta = (-3.0 * n / 2.0) + (9.0 * pow(n, 3.0) / 16.0) + (-3.0 * pow(n, 5.0) / 32.0)
-        
-        /* Precalculate gamma */
-        let gamma = (15.0 * pow(n, 2.0) / 16.0) + (-15.0 * pow(n, 4.0) / 32.0)
-        
-        /* Precalculate delta */
-        let delta = (-35.0 * pow(n, 3.0) / 48.0) + (105.0 * pow(n, 5.0) / 256.0)
-        
-        /* Precalculate epsilon */
-        let epsilon = (315.0 * pow(n, 4.0) / 512.0)
-        
-        /* Now calculate the sum of the series and return */
-        let result = alpha * (latitudeInRadians + (beta * sin(2.0 * latitudeInRadians)) + (gamma * sin(4.0 * latitudeInRadians)) + (delta * sin(6.0 * latitudeInRadians)) + (epsilon * sin(8.0 * latitudeInRadians)))
-        
-        return result
-    }
 }

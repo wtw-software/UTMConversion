@@ -14,10 +14,25 @@
 		454361D81E7BECE300656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454361D91E7BECE700656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454361DA1E7BECE900656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		454361EE1E7C077E00656472 /* RadianDegrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EB1E7C077E00656472 /* RadianDegrees.swift */; };
 		454361EF1E7C077E00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
-		454361F01E7C077E00656472 /* UTMConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361ED1E7C077E00656472 /* UTMConversion.swift */; };
-		454361F21E7C078D00656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
+		454361F41E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
+		454361F51E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
+		454361F61E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
+		454361F71E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
+		454361F91E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
+		454361FA1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
+		454361FB1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
+		454361FC1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
+		454361FD1E7C0AB600656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
+		454361FE1E7C0AB700656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
+		454361FF1E7C0AB700656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
+		454362001E7C0B7B00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
+		454362011E7C0B7B00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
+		454362021E7C0B7C00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
+		454362051E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
+		454362061E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
+		454362071E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
+		454362081E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +72,11 @@
 		454361CA1E7BE7B000656472 /* UTMConversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UTMConversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454361DB1E7BECFA00656472 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		454361DE1E7BED1500656472 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		454361EB1E7C077E00656472 /* RadianDegrees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadianDegrees.swift; sourceTree = "<group>"; };
 		454361EC1E7C077E00656472 /* TMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMCoordinate.swift; sourceTree = "<group>"; };
-		454361ED1E7C077E00656472 /* UTMConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMConversion.swift; sourceTree = "<group>"; };
 		454361F11E7C078D00656472 /* UTMConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMConversionTests.swift; sourceTree = "<group>"; };
+		454361F31E7C0A4900656472 /* UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMCoordinate.swift; sourceTree = "<group>"; };
+		454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+UTMCoordinate.swift"; sourceTree = "<group>"; };
+		454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+UTMCoordinate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +164,10 @@
 				454361761E7BE75800656472 /* UTMConversion.h */,
 				454361DB1E7BECFA00656472 /* Info-tvOS.plist */,
 				454361771E7BE75800656472 /* Info.plist */,
-				454361EB1E7C077E00656472 /* RadianDegrees.swift */,
+				454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */,
+				454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */,
 				454361EC1E7C077E00656472 /* TMCoordinate.swift */,
-				454361ED1E7C077E00656472 /* UTMConversion.swift */,
+				454361F31E7C0A4900656472 /* UTMCoordinate.swift */,
 			);
 			path = UTMConversion;
 			sourceTree = "<group>";
@@ -353,6 +370,7 @@
 					454361911E7BE77F00656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W79FWJ7E3Y;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					454361991E7BE78000656472 = {
@@ -363,6 +381,7 @@
 					454361AD1E7BE79F00656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W79FWJ7E3Y;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					454361B51E7BE7A000656472 = {
@@ -373,6 +392,7 @@
 					454361C91E7BE7B000656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W79FWJ7E3Y;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -457,10 +477,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454361F91E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
 				454361EF1E7C077E00656472 /* TMCoordinate.swift in Sources */,
-				454361F01E7C077E00656472 /* UTMConversion.swift in Sources */,
-				454361F21E7C078D00656472 /* UTMConversionTests.swift in Sources */,
-				454361EE1E7C077E00656472 /* RadianDegrees.swift in Sources */,
+				454362051E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
+				454361F41E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454361FD1E7C0AB600656472 /* UTMConversionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +496,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454362001E7C0B7B00656472 /* TMCoordinate.swift in Sources */,
+				454361FA1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
+				454362061E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
+				454361F51E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454361FE1E7C0AB700656472 /* UTMConversionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +515,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454362011E7C0B7B00656472 /* TMCoordinate.swift in Sources */,
+				454361FB1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
+				454362071E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
+				454361F61E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454361FF1E7C0AB700656472 /* UTMConversionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +534,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454362021E7C0B7C00656472 /* TMCoordinate.swift in Sources */,
+				454361FC1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
+				454362081E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
+				454361F71E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +603,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -615,7 +651,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -696,6 +733,7 @@
 		454361A41E7BE78000656472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
@@ -709,6 +747,7 @@
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.1;
@@ -718,6 +757,7 @@
 		454361A51E7BE78000656472 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
@@ -740,6 +780,7 @@
 		454361A71E7BE78000656472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
 				INFOPLIST_FILE = "UTMConversionTests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -754,6 +795,7 @@
 		454361A81E7BE78000656472 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
 				INFOPLIST_FILE = "UTMConversionTests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -768,6 +810,7 @@
 		454361C01E7BE7A000656472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -784,6 +827,7 @@
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -791,6 +835,7 @@
 		454361C11E7BE7A000656472 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -814,6 +859,7 @@
 		454361C31E7BE7A000656472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
@@ -830,6 +876,7 @@
 		454361C41E7BE7A000656472 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
@@ -847,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
@@ -860,6 +908,7 @@
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
@@ -870,6 +919,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W79FWJ7E3Y;
