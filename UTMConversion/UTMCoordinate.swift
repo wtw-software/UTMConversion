@@ -65,4 +65,9 @@ public struct UTMCoordinate {
         return TMCoordinate(utmCoordinate: self).coordinate(centralMeridian: zone.centralMeridian, datum: datum)
     }
     
+    public func location(datum: UTMDatum = UTMDatum.wgs84) -> CLLocation {
+        let coordinateStruct = coordinate(datum: datum)
+        return CLLocation(latitude: coordinateStruct.latitude, longitude: coordinateStruct.longitude)
+    }
+    
 }

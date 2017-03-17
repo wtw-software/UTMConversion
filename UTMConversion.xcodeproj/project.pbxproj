@@ -29,6 +29,10 @@
 		454362001E7C0B7B00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
 		454362011E7C0B7B00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
 		454362021E7C0B7C00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
+		454362051E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
+		454362061E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
+		454362071E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
+		454362081E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,7 @@
 		454361F11E7C078D00656472 /* UTMConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMConversionTests.swift; sourceTree = "<group>"; };
 		454361F31E7C0A4900656472 /* UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMCoordinate.swift; sourceTree = "<group>"; };
 		454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+UTMCoordinate.swift"; sourceTree = "<group>"; };
+		454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+UTMCoordinate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,12 +161,13 @@
 		454361751E7BE75800656472 /* UTMConversion */ = {
 			isa = PBXGroup;
 			children = (
-				454361761E7BE75800656472 /* UTMConversion.h */,
+				454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */,
+				454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */,
 				454361DB1E7BECFA00656472 /* Info-tvOS.plist */,
 				454361771E7BE75800656472 /* Info.plist */,
 				454361EC1E7C077E00656472 /* TMCoordinate.swift */,
+				454361761E7BE75800656472 /* UTMConversion.h */,
 				454361F31E7C0A4900656472 /* UTMCoordinate.swift */,
-				454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */,
 			);
 			path = UTMConversion;
 			sourceTree = "<group>";
@@ -473,6 +479,7 @@
 			files = (
 				454361F91E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
 				454361EF1E7C077E00656472 /* TMCoordinate.swift in Sources */,
+				454362051E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
 				454361F41E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +498,7 @@
 			files = (
 				454362001E7C0B7B00656472 /* TMCoordinate.swift in Sources */,
 				454361FA1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
+				454362061E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
 				454361F51E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +517,7 @@
 			files = (
 				454362011E7C0B7B00656472 /* TMCoordinate.swift in Sources */,
 				454361FB1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
+				454362071E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
 				454361F61E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +536,7 @@
 			files = (
 				454362021E7C0B7C00656472 /* TMCoordinate.swift in Sources */,
 				454361FC1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
+				454362081E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
 				454361F71E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
