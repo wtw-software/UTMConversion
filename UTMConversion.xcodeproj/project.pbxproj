@@ -359,12 +359,13 @@
 					454361721E7BE75800656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W79FWJ7E3Y;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					4543617B1E7BE75800656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7L5H8T8QE3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					454361911E7BE77F00656472 = {
