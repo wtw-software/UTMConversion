@@ -35,7 +35,7 @@ extension UTMGridZone {
     
     /** Calculate the central meridian of the receiver */
     var centralMeridian: Double {
-        return toRadians(degrees: -183.0 + (Double(self) * 6.0));
+        return toRadians(-183.0 + (Double(self) * 6.0));
     }
 }
 

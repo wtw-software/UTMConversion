@@ -29,12 +29,12 @@ import Foundation
 
 let utmScaleFactor = 0.9996
 
-func toDegrees(radians: Double) -> Double {
-    return radians * 180 / M_PI
+func toDegrees(_ radians: Double) -> Double {
+    return radians * 180 / Double.pi
 }
 
-func toRadians(degrees: Double) -> Double {
-    return degrees / 180 * M_PI
+func toRadians(_ degrees: Double) -> Double {
+    return degrees / 180 * Double.pi
 }
 
 /**
@@ -63,8 +63,8 @@ struct TMCoordinate {
         - Parameter datum: The datum to use
      */
     init(coordinate: CLLocationCoordinate2D, centralMeridian: Double, datum: UTMDatum) {
-        let phi = toRadians(degrees: coordinate.latitude) // Latitude in radians
-        let lambda = toRadians(degrees: coordinate.longitude) // Longitude in radians
+        let phi = toRadians(coordinate.latitude) // Latitude in radians
+        let lambda = toRadians(coordinate.longitude) // Longitude in radians
         
         let equitorialRadus = datum.equitorialRadius
         let polarRadius = datum.polarRadius
@@ -230,7 +230,7 @@ struct TMCoordinate {
         /* Calculate longitude */
         let longitudeRadians = centralMeridian + x1frac * x + x3frac * x3poly * pow(x, 3.0) + x5frac * x5poly * pow(x, 5.0) + x7frac * x7poly * pow(x, 7.0)
         
-        return CLLocationCoordinate2D(latitude: toDegrees(radians: latitudeRadians), longitude: toDegrees(radians: longitudeRadians))
+        return CLLocationCoordinate2D(latitude: toDegrees(latitudeRadians), longitude: toDegrees(longitudeRadians))
     }
     
     /**
@@ -240,7 +240,7 @@ struct TMCoordinate {
         - Parameter datum: The datum to use
      
      */
-    private func footpointLatitude(northing: Double, datum: UTMDatum) -> Double {
+    fileprivate func footpointLatitude(northing: Double, datum: UTMDatum) -> Double {
         let equitorialRadus = datum.equitorialRadius
         let polarRadius = datum.polarRadius
         
