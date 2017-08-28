@@ -77,6 +77,7 @@
 		454361F31E7C0A4900656472 /* UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMCoordinate.swift; sourceTree = "<group>"; };
 		454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+UTMCoordinate.swift"; sourceTree = "<group>"; };
 		454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+UTMCoordinate.swift"; sourceTree = "<group>"; };
+		45F3273B1F54102500961639 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 		454361691E7BE75800656472 = {
 			isa = PBXGroup;
 			children = (
+				45F3273B1F54102500961639 /* README.md */,
 				454361751E7BE75800656472 /* UTMConversion */,
 				454361801E7BE75800656472 /* UTMConversionTests */,
 				454361741E7BE75800656472 /* Products */,
