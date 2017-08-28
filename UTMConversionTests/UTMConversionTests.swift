@@ -14,40 +14,40 @@ class UTMConversionTests: XCTestCase {
     
     func testCLLocationCoordinate2D_utmCoordinate() {
         let osloUTM = oslo.utmCoordinate()
-        XCTAssertEqualWithAccuracy(osloUTM.northing, 6643010.0, accuracy: 0.00001);
-        XCTAssertEqualWithAccuracy(osloUTM.easting, 598430.0, accuracy: 0.00001);
+        XCTAssertEqual(osloUTM.northing, 6643010.0, accuracy: 0.00001);
+        XCTAssertEqual(osloUTM.easting, 598430.0, accuracy: 0.00001);
         XCTAssertEqual(osloUTM.zone, 32)
         XCTAssertEqual(osloUTM.hemisphere, .northern)
         
         let trondheimUTM = trondheim.utmCoordinate()
-        XCTAssertEqualWithAccuracy(trondheimUTM.northing, 7034313, accuracy: 0.00001)
-        XCTAssertEqualWithAccuracy(trondheimUTM.easting, 569612, accuracy: 0.00001)
+        XCTAssertEqual(trondheimUTM.northing, 7034313, accuracy: 0.00001)
+        XCTAssertEqual(trondheimUTM.easting, 569612, accuracy: 0.00001)
         XCTAssertEqual(trondheimUTM.zone, 32)
         XCTAssertEqual(trondheimUTM.hemisphere, .northern)
         
         let johannesburgUTM = johannesburg.utmCoordinate()
-        XCTAssertEqualWithAccuracy(johannesburgUTM.northing, 7100115, accuracy: 0.00001)
-        XCTAssertEqualWithAccuracy(johannesburgUTM.easting, 603914, accuracy: 0.00001)
+        XCTAssertEqual(johannesburgUTM.northing, 7100115, accuracy: 0.00001)
+        XCTAssertEqual(johannesburgUTM.easting, 603914, accuracy: 0.00001)
         XCTAssertEqual(johannesburgUTM.zone, 35)
         XCTAssertEqual(johannesburgUTM.hemisphere, .southern)
     }
     
     func testCLLocation_utmCoordinate() {
         let osloUTM = osloLocation.utmCoordinate()
-        XCTAssertEqualWithAccuracy(osloUTM.northing, 6643010.0, accuracy: 0.00001);
-        XCTAssertEqualWithAccuracy(osloUTM.easting, 598430.0, accuracy: 0.00001);
+        XCTAssertEqual(osloUTM.northing, 6643010.0, accuracy: 0.00001);
+        XCTAssertEqual(osloUTM.easting, 598430.0, accuracy: 0.00001);
         XCTAssertEqual(osloUTM.zone, 32)
         XCTAssertEqual(osloUTM.hemisphere, .northern)
         
         let trondheimUTM = trondheimLocation.utmCoordinate()
-        XCTAssertEqualWithAccuracy(trondheimUTM.northing, 7034313, accuracy: 0.00001)
-        XCTAssertEqualWithAccuracy(trondheimUTM.easting, 569612, accuracy: 0.00001)
+        XCTAssertEqual(trondheimUTM.northing, 7034313, accuracy: 0.00001)
+        XCTAssertEqual(trondheimUTM.easting, 569612, accuracy: 0.00001)
         XCTAssertEqual(trondheimUTM.zone, 32)
         XCTAssertEqual(trondheimUTM.hemisphere, .northern)
         
         let johannesburgUTM = johannesburgLocation.utmCoordinate()
-        XCTAssertEqualWithAccuracy(johannesburgUTM.northing, 7100115, accuracy: 0.00001)
-        XCTAssertEqualWithAccuracy(johannesburgUTM.easting, 603914, accuracy: 0.00001)
+        XCTAssertEqual(johannesburgUTM.northing, 7100115, accuracy: 0.00001)
+        XCTAssertEqual(johannesburgUTM.easting, 603914, accuracy: 0.00001)
         XCTAssertEqual(johannesburgUTM.zone, 35)
         XCTAssertEqual(johannesburgUTM.hemisphere, .southern)
     }
