@@ -37,6 +37,9 @@ func toRadians(degrees: Double) -> Double {
     return degrees / 180 * Double.pi
 }
 
+/**
+    Internal struct used to represent Transverse Mercator coordinates. This struct is used as an intermediate representation of the location, in order to convert between Universal Transverse Mercator (UTM) coordinates, and latitude and longitude.
+ */
 struct TMCoordinate {
     let northing: Double
     let easting: Double
@@ -52,7 +55,14 @@ struct TMCoordinate {
         }()
     }
     
-    init(coordinate: CLLocationCoordinate2D, centralMeridian lambda0: Double, datum: UTMDatum) {
+    /**
+        Init with a CLLocationCoordinate
+     
+        - Parameter coordinate: The coordinate to init with
+        - Parameter centralMeridian: The central meridian of the earth
+        - Parameter datum: The datum to use
+     */
+    init(coordinate: CLLocationCoordinate2D, centralMeridian: Double, datum: UTMDatum) {
         let phi = toRadians(degrees: coordinate.latitude) // Latitude in radians
         let lambda = toRadians(degrees: coordinate.longitude) // Longitude in radians
         
@@ -73,7 +83,7 @@ struct TMCoordinate {
         let t2 = t * t
         
         /* Precalculate l */
-        let l = lambda - lambda0
+        let l = lambda - centralMeridian
         
         /* Precalculate coefficients for l**n in the equations below
          so a normal human being can read the expressions for easting
@@ -122,6 +132,13 @@ struct TMCoordinate {
         northing = arcLengthOfMeridian(phi, datum) + (t / 2.0 * N * pow(cos(phi), 2.0) * pow(l, 2.0)) + (t / 24.0 * N * pow(cos(phi), 4.0) * l4coef * pow(l, 4.0)) + (t / 720.0 * N * pow(cos(phi), 6.0) * l6coef * pow(l, 6.0)) + (t / 40320.0 * N * pow(cos(phi), 8.0) * l8coef * pow(l, 8.0))
     }
     
+    /**
+        Create an UTMCoordinate from the receiver
+     
+        - Parameter zone: The UTMGridZone to use
+        - Parameter hemisphere: Choose if the coordinate should be relative to the northern of southern hemisphere
+     
+     */
     func utmCoordinate(zone: UTMGridZone, hemisphere: UTMHemisphere) -> UTMCoordinate {
         let x = easting * utmScaleFactor + 500000.0;
         let y: Double = {
@@ -135,12 +152,16 @@ struct TMCoordinate {
         return UTMCoordinate(northing: y, easting: x, zone: zone, hemisphere: hemisphere)
     }
     
-    //
-    // Converts x and y coordinates in the Transverse Mercator projection to a latitude/longitude pair.  Note that Transverse Mercator is not the same as UTM a scale factor is required to convert between them.
-    // Remarks:
-    // The local variables Nf, nuf2, tf, and tf2 serve the same purpose as N, nu2, t, and t2 in MapLatLonToXY, but they are computed with respect to the footpoint latitude phif.
-    // x1frac, x2frac, x2poly, x3poly, etc. are to enhance readability and to optimize computations.
-    func coordinate(centralMeridian lambda0: Double, datum: UTMDatum) -> CLLocationCoordinate2D {
+    /**
+        Converts easting and northing coordinates in the Transverse Mercator projection to a latitude/longitude pair. Note that Transverse Mercator is not the same as UTM a scale factor is required to convert between them.
+     
+        - Parameter centralMeridian: The central meridian of the earth
+        - Parameter datum: The datum to use
+     
+     */
+    func coordinate(centralMeridian: Double, datum: UTMDatum) -> CLLocationCoordinate2D {
+        /* The local variables Nf, nuf2, tf, and tf2 serve the same purpose as N, nu2, t, and t2 in MapLatLonToXY, but they are computed with respect to the footpoint latitude phif. x1frac, x2frac, x2poly, x3poly, etc. are to enhance readability and to optimize computations. */
+
         let x = easting
         let y = northing
         
@@ -148,7 +169,7 @@ struct TMCoordinate {
         let polarRadius = datum.polarRadius
         
         /* Get the value of phif, the footpoint latitude. */
-        let phif = footpointLatitude(northingInMeters: y, datum: datum)
+        let phif = footpointLatitude(northing: y, datum: datum)
         
         /* Precalculate ep2 */
         let ep2 = (pow(equitorialRadus, 2.0) - pow(polarRadius, 2.0)) / pow(polarRadius, 2.0)
@@ -207,14 +228,19 @@ struct TMCoordinate {
         let latitudeRadians = phif + x2frac * x2poly * (x * x) + x4frac * x4poly * pow(x, 4.0) + x6frac * x6poly * pow(x, 6.0) + x8frac * x8poly * pow(x, 8.0)
         
         /* Calculate longitude */
-        let longitudeRadians = lambda0 + x1frac * x + x3frac * x3poly * pow(x, 3.0) + x5frac * x5poly * pow(x, 5.0) + x7frac * x7poly * pow(x, 7.0)
+        let longitudeRadians = centralMeridian + x1frac * x + x3frac * x3poly * pow(x, 3.0) + x5frac * x5poly * pow(x, 5.0) + x7frac * x7poly * pow(x, 7.0)
         
         return CLLocationCoordinate2D(latitude: toDegrees(radians: latitudeRadians), longitude: toDegrees(radians: longitudeRadians))
     }
     
-    //
-    // Computes the footpoint latitude for use in converting transverse Mercator coordinates to ellipsoidal coordinates.
-    private func footpointLatitude(northingInMeters: Double, datum: UTMDatum) -> Double {
+    /**
+        Computes the footpoint latitude for use in converting transverse Mercator coordinates to ellipsoidal coordinates.
+     
+        - Parameter northingInMeters: The northing value
+        - Parameter datum: The datum to use
+     
+     */
+    private func footpointLatitude(northing: Double, datum: UTMDatum) -> Double {
         let equitorialRadus = datum.equitorialRadius
         let polarRadius = datum.polarRadius
         
@@ -226,7 +252,7 @@ struct TMCoordinate {
         let alpha = ((equitorialRadus + polarRadius) / 2.0) * (1 + (pow(n, 2.0) / 4) + (pow(n, 4.0) / 64))
         
         /* Precalculate y (Eq. 10.23) */
-        let y = northingInMeters / alpha
+        let y = northing / alpha
         
         /* Precalculate beta (Eq. 10.22) */
         let beta = (3.0 * n / 2.0) + (-27.0 * pow(n, 3.0) / 32.0) + (269.0 * pow(n, 5.0) / 512.0)
