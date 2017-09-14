@@ -16,7 +16,7 @@ Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)]
 To integrate UTMConversion into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```ogdl
-github "peterringset/UTMConversion" ~> 1.0
+github "peterringset/UTMConversion" ~> 1.1
 ```
 
 ## Usage
