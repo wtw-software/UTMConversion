@@ -30,11 +30,11 @@ import Foundation
 let utmScaleFactor = 0.9996
 
 func toDegrees(radians: Double) -> Double {
-    return radians * 180 / M_PI
+    return radians * 180 / Double.pi
 }
 
 func toRadians(degrees: Double) -> Double {
-    return degrees / 180 * M_PI
+    return degrees / 180 * Double.pi
 }
 
 struct TMCoordinate {
