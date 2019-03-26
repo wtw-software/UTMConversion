@@ -37,7 +37,7 @@ public extension CLLocationCoordinate2D {
      - Parameter datum: The datum to use, defaults to WGS84 which should be fine for most applications
      
      */
-    public func utmCoordinate(datum: UTMDatum = UTMDatum.wgs84) -> UTMCoordinate {
+    func utmCoordinate(datum: UTMDatum = UTMDatum.wgs84) -> UTMCoordinate {
         let zone = self.zone
         return TMCoordinate(coordinate: self, centralMeridian: zone.centralMeridian, datum: datum).utmCoordinate(zone: zone, hemisphere: hemisphere)
     }
