@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   }
   s.ios.deployment_target = '8.0'
   s.source = {
-    git: 'https://github.com/wtw-software/UTMConversion',
+    git: 'https://github.com/wtw-software/UTMConversion.git',
     tag: s.version
   }
   s.source_files = 'UTMConversion/*.{swift,h}'
