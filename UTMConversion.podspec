@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'UTMConversion'
-  s.version = '1.2.1'
+  s.version = '1.2.2'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.4.0'
   s.summary = 'Convert between latitude/longitude and the UTM coordinate system.'
