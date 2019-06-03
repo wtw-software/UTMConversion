@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
     git: 'https://github.com/wtw-software/UTMConversion.git',
     tag: s.version
   }
-  s.source_files = 'UTMConversion/*.{swift,h}'
+  s.source_files = 'UTMConversion/**/*.swift'
 end
