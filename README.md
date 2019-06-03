@@ -2,7 +2,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system) coordinate systems. The conversion happens between a custom `struct` `UTMCoordinate` and CoreLocation's `CLLocationCoordinate2D` and `CLLocation`. 
+Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system) coordinate systems. The conversion happens between a custom `struct` `UTMCoordinate` and CoreLocation's `CLLocationCoordinate2D` and `CLLocation`.
 
 ## Requirements
 
@@ -16,8 +16,20 @@ Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)]
 To integrate UTMConversion into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```ogdl
-github "wtw-software/UTMConversion" ~> 1.1
+github "wtw-software/UTMConversion" ~> 1.2
 ```
+
+### CocoaPods
+
+To integrate UTMConversion into you Xcode project using [CocoaPods](https://cocoapods.org), specify it in you `Podfile`:
+
+```ruby
+target 'MyApp' do
+  pod 'UTMConversion', '~> 1.2'
+end
+```
+
+Then run `pod install` inside your terminal, or from CocoaPods.app.
 
 ## Usage
 ### Convert to UTM
