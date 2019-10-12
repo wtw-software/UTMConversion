@@ -700,6 +700,7 @@
 				INFOPLIST_FILE = UTMConversion/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = no.ringset.UTMConversion;
 				PRODUCT_NAME = UTMConversion;
 				SKIP_INSTALL = YES;
@@ -721,6 +722,7 @@
 				INFOPLIST_FILE = UTMConversion/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = no.ringset.UTMConversion;
 				PRODUCT_NAME = UTMConversion;
 				SKIP_INSTALL = YES;
@@ -767,6 +769,7 @@
 				INFOPLIST_FILE = "UTMConversion/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-tvOS";
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = appletvos;
@@ -791,6 +794,7 @@
 				INFOPLIST_FILE = "UTMConversion/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-tvOS";
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = appletvos;
@@ -849,6 +853,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-macOS";
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = macosx;
@@ -874,6 +879,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-macOS";
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = macosx;
@@ -930,6 +936,7 @@
 				INFOPLIST_FILE = UTMConversion/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-watchOS";
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = watchos;
@@ -955,6 +962,7 @@
 				INFOPLIST_FILE = UTMConversion/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-watchOS";
 				PRODUCT_NAME = UTMConversion;
 				SDKROOT = watchos;
