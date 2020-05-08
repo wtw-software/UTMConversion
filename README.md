@@ -16,7 +16,7 @@ Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)]
 To integrate UTMConversion into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```ogdl
-github "wtw-software/UTMConversion" ~> 1.2
+github "wtw-software/UTMConversion" ~> 1.3
 ```
 
 ### CocoaPods
@@ -25,7 +25,7 @@ To integrate UTMConversion into you Xcode project using [CocoaPods](https://coco
 
 ```ruby
 target 'MyApp' do
-  pod 'UTMConversion', '~> 1.2'
+  pod 'UTMConversion', '~> 1.3'
 end
 ```
 
