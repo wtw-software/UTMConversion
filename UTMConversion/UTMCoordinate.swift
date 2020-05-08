@@ -62,6 +62,11 @@ public struct UTMDatum {
     
     /** WGS84 is the most commonly used datum of the earth */
     public static let wgs84 = UTMDatum(equitorialRadius: 6378137, polarRadius: 6356752.3142) // WGS84
+    
+    public init(equitorialRadius: Double, polarRadius: Double) {
+        self.equitorialRadius = equitorialRadius
+        self.polarRadius = polarRadius
+    }
 }
 
 /**

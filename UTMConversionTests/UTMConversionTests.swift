@@ -101,6 +101,11 @@ class UTMConversionTests: XCTestCase {
         XCTAssertEqual(buninyong.coordinate.longitude, 143.92649554, accuracy: 0.00001)
     }
     
+    func testCustomDatum() {
+        let oslo = osloUTM.location(datum: UTMDatum(equitorialRadius: 6378137, polarRadius: 6356752.3142))
+        XCTAssertEqual(oslo.coordinate.latitude, 59.912814611065265)
+        XCTAssertEqual(oslo.coordinate.longitude, 10.760192985178369)
+    }
 }
 
 
