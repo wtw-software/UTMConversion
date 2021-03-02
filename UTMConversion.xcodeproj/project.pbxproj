@@ -9,30 +9,18 @@
 /* Begin PBXBuildFile section */
 		4543617D1E7BE75800656472 /* UTMConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454361731E7BE75800656472 /* UTMConversion.framework */; };
 		454361841E7BE75800656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4543619B1E7BE78000656472 /* UTMConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454361921E7BE77F00656472 /* UTMConversion.framework */; };
 		454361B71E7BE7A000656472 /* UTMConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454361AE1E7BE79F00656472 /* UTMConversion.framework */; };
-		454361D81E7BECE300656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454361D91E7BECE700656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		454361DA1E7BECE900656472 /* UTMConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454361761E7BE75800656472 /* UTMConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454361EF1E7C077E00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
 		454361F41E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
-		454361F51E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
 		454361F61E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
-		454361F71E7C0A4900656472 /* UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F31E7C0A4900656472 /* UTMCoordinate.swift */; };
 		454361F91E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
-		454361FA1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
 		454361FB1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
-		454361FC1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */; };
 		454361FD1E7C0AB600656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
-		454361FE1E7C0AB700656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
 		454361FF1E7C0AB700656472 /* UTMConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361F11E7C078D00656472 /* UTMConversionTests.swift */; };
-		454362001E7C0B7B00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
 		454362011E7C0B7B00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
-		454362021E7C0B7C00656472 /* TMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454361EC1E7C077E00656472 /* TMCoordinate.swift */; };
 		454362051E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
-		454362061E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
 		454362071E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
-		454362081E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +30,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 454361721E7BE75800656472;
 			remoteInfo = UTMConversion;
-		};
-		4543619C1E7BE78000656472 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4543616A1E7BE75800656472 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 454361911E7BE77F00656472;
-			remoteInfo = "UTMConversion tvOS";
 		};
 		454361B81E7BE7A000656472 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,12 +46,8 @@
 		454361771E7BE75800656472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4543617C1E7BE75800656472 /* UTMConversion iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UTMConversion iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		454361831E7BE75800656472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		454361921E7BE77F00656472 /* UTMConversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UTMConversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4543619A1E7BE78000656472 /* UTMConversion tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UTMConversion tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		454361AE1E7BE79F00656472 /* UTMConversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UTMConversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454361B61E7BE7A000656472 /* UTMConversion macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UTMConversion macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		454361CA1E7BE7B000656472 /* UTMConversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UTMConversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		454361DB1E7BECFA00656472 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		454361DE1E7BED1500656472 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		454361EC1E7C077E00656472 /* TMCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMCoordinate.swift; sourceTree = "<group>"; };
 		454361F11E7C078D00656472 /* UTMConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMConversionTests.swift; sourceTree = "<group>"; };
@@ -96,21 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4543618E1E7BE77F00656472 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		454361971E7BE78000656472 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4543619B1E7BE78000656472 /* UTMConversion.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		454361AA1E7BE79F00656472 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,13 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				454361B71E7BE7A000656472 /* UTMConversion.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		454361C61E7BE7B000656472 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,11 +106,8 @@
 			children = (
 				454361731E7BE75800656472 /* UTMConversion.framework */,
 				4543617C1E7BE75800656472 /* UTMConversion iOSTests.xctest */,
-				454361921E7BE77F00656472 /* UTMConversion.framework */,
-				4543619A1E7BE78000656472 /* UTMConversion tvOSTests.xctest */,
 				454361AE1E7BE79F00656472 /* UTMConversion.framework */,
 				454361B61E7BE7A000656472 /* UTMConversion macOSTests.xctest */,
-				454361CA1E7BE7B000656472 /* UTMConversion.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				454361761E7BE75800656472 /* UTMConversion.h */,
-				454361DB1E7BECFA00656472 /* Info-tvOS.plist */,
 				454361771E7BE75800656472 /* Info.plist */,
 				454362041E7C0E0400656472 /* CLLocation+UTMCoordinate.swift */,
 				454361F81E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift */,
@@ -195,27 +146,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4543618F1E7BE77F00656472 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				454361D81E7BECE300656472 /* UTMConversion.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		454361AB1E7BE79F00656472 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				454361D91E7BECE700656472 /* UTMConversion.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		454361C71E7BE7B000656472 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				454361DA1E7BECE900656472 /* UTMConversion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,42 +193,6 @@
 			productReference = 4543617C1E7BE75800656472 /* UTMConversion iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		454361911E7BE77F00656472 /* UTMConversion tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 454361A31E7BE78000656472 /* Build configuration list for PBXNativeTarget "UTMConversion tvOS" */;
-			buildPhases = (
-				4543618D1E7BE77F00656472 /* Sources */,
-				4543618E1E7BE77F00656472 /* Frameworks */,
-				4543618F1E7BE77F00656472 /* Headers */,
-				454361901E7BE77F00656472 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UTMConversion tvOS";
-			productName = "UTMConversion tvOS";
-			productReference = 454361921E7BE77F00656472 /* UTMConversion.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		454361991E7BE78000656472 /* UTMConversion tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 454361A61E7BE78000656472 /* Build configuration list for PBXNativeTarget "UTMConversion tvOSTests" */;
-			buildPhases = (
-				454361961E7BE78000656472 /* Sources */,
-				454361971E7BE78000656472 /* Frameworks */,
-				454361981E7BE78000656472 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4543619D1E7BE78000656472 /* PBXTargetDependency */,
-			);
-			name = "UTMConversion tvOSTests";
-			productName = "UTMConversion tvOSTests";
-			productReference = 4543619A1E7BE78000656472 /* UTMConversion tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		454361AD1E7BE79F00656472 /* UTMConversion macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 454361BF1E7BE7A000656472 /* Build configuration list for PBXNativeTarget "UTMConversion macOS" */;
@@ -330,24 +229,6 @@
 			productReference = 454361B61E7BE7A000656472 /* UTMConversion macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		454361C91E7BE7B000656472 /* UTMConversion watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 454361CF1E7BE7B000656472 /* Build configuration list for PBXNativeTarget "UTMConversion watchOS" */;
-			buildPhases = (
-				454361C51E7BE7B000656472 /* Sources */,
-				454361C61E7BE7B000656472 /* Frameworks */,
-				454361C71E7BE7B000656472 /* Headers */,
-				454361C81E7BE7B000656472 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UTMConversion watchOS";
-			productName = "UTMConversion watchOS";
-			productReference = 454361CA1E7BE7B000656472 /* UTMConversion.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Peter Ringset";
 				TargetAttributes = {
 					454361721E7BE75800656472 = {
@@ -370,18 +251,6 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
-					454361911E7BE77F00656472 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W79FWJ7E3Y;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-					};
-					454361991E7BE78000656472 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W79FWJ7E3Y;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-					};
 					454361AD1E7BE79F00656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W79FWJ7E3Y;
@@ -389,12 +258,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					454361B51E7BE7A000656472 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W79FWJ7E3Y;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-					};
-					454361C91E7BE7B000656472 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W79FWJ7E3Y;
 						LastSwiftMigration = 1020;
@@ -417,11 +280,8 @@
 			targets = (
 				454361721E7BE75800656472 /* UTMConversion iOS */,
 				4543617B1E7BE75800656472 /* UTMConversion iOSTests */,
-				454361911E7BE77F00656472 /* UTMConversion tvOS */,
-				454361991E7BE78000656472 /* UTMConversion tvOSTests */,
 				454361AD1E7BE79F00656472 /* UTMConversion macOS */,
 				454361B51E7BE7A000656472 /* UTMConversion macOSTests */,
-				454361C91E7BE7B000656472 /* UTMConversion watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -441,20 +301,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		454361901E7BE77F00656472 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		454361981E7BE78000656472 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		454361AC1E7BE79F00656472 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,13 +309,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		454361B41E7BE7A000656472 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		454361C81E7BE7B000656472 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,25 +337,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4543618D1E7BE77F00656472 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				454362001E7C0B7B00656472 /* TMCoordinate.swift in Sources */,
-				454361FA1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
-				454362061E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
-				454361F51E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		454361961E7BE78000656472 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				454361FE1E7C0AB700656472 /* UTMConversionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		454361A91E7BE79F00656472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,17 +356,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		454361C51E7BE7B000656472 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				454362021E7C0B7C00656472 /* TMCoordinate.swift in Sources */,
-				454361FC1E7C0A7B00656472 /* CLLocationCoordinate2D+UTMCoordinate.swift in Sources */,
-				454362081E7C0E0400656472 /* CLLocation+UTMCoordinate.swift in Sources */,
-				454361F71E7C0A4900656472 /* UTMCoordinate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -554,11 +363,6 @@
 			isa = PBXTargetDependency;
 			target = 454361721E7BE75800656472 /* UTMConversion iOS */;
 			targetProxy = 4543617E1E7BE75800656472 /* PBXContainerItemProxy */;
-		};
-		4543619D1E7BE78000656472 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 454361911E7BE77F00656472 /* UTMConversion tvOS */;
-			targetProxy = 4543619C1E7BE78000656472 /* PBXContainerItemProxy */;
 		};
 		454361B91E7BE7A000656472 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -593,6 +397,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -618,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -656,6 +461,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -675,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -693,7 +499,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -715,7 +520,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -756,87 +560,6 @@
 			};
 			name = Release;
 		};
-		454361A41E7BE78000656472 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "UTMConversion/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-tvOS";
-				PRODUCT_NAME = UTMConversion;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		454361A51E7BE78000656472 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "UTMConversion/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-tvOS";
-				PRODUCT_NAME = UTMConversion;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
-		454361A71E7BE78000656472 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
-				INFOPLIST_FILE = "UTMConversionTests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.1;
-			};
-			name = Debug;
-		};
-		454361A81E7BE78000656472 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
-				INFOPLIST_FILE = "UTMConversionTests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.1;
-			};
-			name = Release;
-		};
 		454361C01E7BE7A000656472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -844,7 +567,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -870,7 +592,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -922,57 +643,6 @@
 			};
 			name = Release;
 		};
-		454361D01E7BE7B000656472 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = UTMConversion/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-watchOS";
-				PRODUCT_NAME = UTMConversion;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		454361D11E7BE7B000656472 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W79FWJ7E3Y;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = UTMConversion/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.ringset.UTMConversion-watchOS";
-				PRODUCT_NAME = UTMConversion;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1003,24 +673,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		454361A31E7BE78000656472 /* Build configuration list for PBXNativeTarget "UTMConversion tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				454361A41E7BE78000656472 /* Debug */,
-				454361A51E7BE78000656472 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		454361A61E7BE78000656472 /* Build configuration list for PBXNativeTarget "UTMConversion tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				454361A71E7BE78000656472 /* Debug */,
-				454361A81E7BE78000656472 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		454361BF1E7BE7A000656472 /* Build configuration list for PBXNativeTarget "UTMConversion macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1035,15 +687,6 @@
 			buildConfigurations = (
 				454361C31E7BE7A000656472 /* Debug */,
 				454361C41E7BE7A000656472 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		454361CF1E7BE7B000656472 /* Build configuration list for PBXNativeTarget "UTMConversion watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				454361D01E7BE7B000656472 /* Debug */,
-				454361D11E7BE7B000656472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,11 +1,3 @@
-//
-//  UTMConversion.h
-//  UTMConversion
-//
-//  Created by Peter Ringset on 17/03/2017.
-//  Copyright © 2017 Peter Ringset. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for UTMConversion.

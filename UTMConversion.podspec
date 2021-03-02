@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     file: 'LICENSE'
   }
   s.authors = {
-    'Peter Ringset' => 'peter.ringset@eggsdesign.com'
+    'Peter Ringset' => 'peter@ringset.no'
   }
   s.ios.deployment_target = '8.0'
   s.source = {
