@@ -6,9 +6,7 @@ Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)]
 
 ## Requirements
 
-- iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 10+
-- Swift 4.2+
+- iOS 12.0+ / macOS 10.10+
 
 ## Installation
 ### Carthage
@@ -16,7 +14,7 @@ Convert between latitude/longitude and the [UTM (Universal Transverse Mercator)]
 To integrate UTMConversion into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```ogdl
-github "wtw-software/UTMConversion" ~> 1.3
+github "wtw-software/UTMConversion" ~> 1.4
 ```
 
 ### CocoaPods
@@ -25,7 +23,7 @@ To integrate UTMConversion into you Xcode project using [CocoaPods](https://coco
 
 ```ruby
 target 'MyApp' do
-  pod 'UTMConversion', '~> 1.3'
+  pod 'UTMConversion', '~> 1.4'
 end
 ```
 
